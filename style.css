@@ -1,0 +1,59 @@
+/* Style CCS pour rendre attrayante la page de Boutique */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.zoom-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Nécessaire pour que z-index fonctionne */
+  }
+  
+  .zoom-effect:hover {
+    transform: scale(1.15); /* Agrandir légèrement la div */
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
+    z-index: 10; /* Met la div au-dessus des autres */
+  }
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: blue;
+}
