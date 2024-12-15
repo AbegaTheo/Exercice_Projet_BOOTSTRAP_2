@@ -29,6 +29,15 @@ footer {
     z-index: 10; /* Met la div au-dessus des autres */
   }
 
+  /* Media query pour les petits écrans */
+  @media (max-width: 575.98px) {
+    .zoom-effect:hover {
+        transform: none; /* Désactive le zoom */
+        box-shadow: none; /* Désactive l'ombre */
+        z-index: auto; /* Réinitialise le z-index */
+    }
+}
+
 /* Formulaire */
 form {
     max-width: 600px;
