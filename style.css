@@ -1,68 +1,86 @@
-/* Style CCS pour rendre attrayante la page de Boutique */
-
+/* Style global pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Police par défaut */
 }
 
+/* Style pour les cartes (ex. produits ou sections) */
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacement entre les cartes */
 }
 
+.title {
+    margin-top: 150px; /* Espacement au-dessus du titre */
+}
+
+/* Style pour le pied de page */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; /* Couleur de fond sombre */
+    color: white; /* Texte en blanc */
+    text-align: center; /* Centrer le texte */
+    padding: 10px 0; /* Espacement interne vertical */
+    position: relative; /* Position relative pour un placement flexible */
+    bottom: 0; /* Positionner en bas */
+    width: 100%; /* Occuper toute la largeur */
 }
 
+/* Effet de zoom sur les éléments avec la classe .zoom-effect */
 .zoom-effect {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide pour le zoom et l'ombre */
     position: relative; /* Nécessaire pour que z-index fonctionne */
-  }
+}
   
-  .zoom-effect:hover {
-    transform: scale(1.15); /* Agrandir légèrement la div */
+.zoom-effect:hover {
+    transform: scale(1.15); /* Agrandir légèrement l'élément au survol */
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
-    z-index: 10; /* Met la div au-dessus des autres */
-  }
+    z-index: 10; /* Mettre l'élément au-dessus des autres */
+}
 
-  /* Media query pour les petits écrans */
-  @media (max-width: 575.98px) {
+/* Désactiver l'effet de zoom pour les petits écrans */
+@media (max-width: 575.98px) {
     .zoom-effect:hover {
-        transform: none; /* Désactive le zoom */
-        box-shadow: none; /* Désactive l'ombre */
-        z-index: auto; /* Réinitialise le z-index */
+        transform: none; /* Désactiver le zoom */
+        box-shadow: none; /* Désactiver l'ombre */
+        z-index: auto; /* Réinitialiser le z-index */
     }
 }
 
-/* Formulaire */
+/* Style pour le formulaire */
 form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; /* Limiter la largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #f5f5f5; /* Couleur de fond gris clair */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
+    overflow: hidden; /* Masquer les éléments dépassant la largeur du formulaire */
+    position: relative; /* Position relative pour un placement flexible */
 }
 
+/* Style pour les étiquettes des champs du formulaire */
 form label {
-    display: block;
-    margin: 10px 0 5px;
+    display: block; /* Afficher les étiquettes en bloc */
+    margin: 10px 0 5px; /* Espacement autour des étiquettes */
+    font-weight: bold; /* Texte en gras */
 }
 
+/* Style pour les champs de saisie, les zones de texte et les boutons */
 form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Occuper toute la largeur disponible */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 5px; /* Espacement entre les éléments */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
 }
 
+/* Style pour le bouton du formulaire */
 form button {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
+    background-color: #333; /* Couleur de fond sombre */
+    color: white; /* Texte en blanc */
+    cursor: pointer; /* Changer le curseur au survol */
 }
 
+/* Changement de couleur du bouton au survol */
 form button:hover {
-    background-color: blue;
+    background-color: blue; /* Couleur de fond bleue */
 }

@@ -4,48 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique Electronique</title>
+
+    <!-- Lien vers la feuille de style CSS de Bootstrap pour utiliser ses classes et fonctionnalités -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lien vers la feuille de style CSS personnalisée pour ajouter des styles supplémentaires -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Lien vers la feuille de style CSS Bootstrap Icons pour utiliser les icônes Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-3" id="#">
+    <!-- En-tête de la page -->
+    <header class="bg-dark text-white text-center py-3 pb-5" id="#">
+        <!-- Barre de navigation -->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">Boutique Electronique</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#produits">Produits</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Lien "Boutique Electronique" -->
+                <a class="navbar-brand fw-bold" href="#">Boutique Electronique</a>
+                
+                <!-- Bouton pour le menu responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Liens de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav fw-bold mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produits">Produits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </nav> <br/> <br/><br/><br/>
-        <h1>Bienvenue à notre Boutique Electronique</h1>
-        <h6>Vente d'articles Electroniques (Ordinateur, Ecouteur, Chargeur, Montre, etc.)</h6>
+        </nav>
+        <!-- Titre principal -->
+        <h1 class="title fw-bold">Bienvenue à notre Boutique Electronique</h1>
+        <h6 class="fw-bold">Vente d'articles Electroniques (Ordinateur, Ecouteur, Chargeur, Montre, etc.)</h6>
     </header>
     
+    <!-- Section des produits -->
     <section id="produits" class="container my-5">
         <h2 class="text-center fw-bold">Nos Produits</h2><br>
         <div class="row">
-
+            <!-- Produit 1 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/ecouteur_oraimo_2.png" class="card-img-top img-fluid" alt="Produit Ecouteur Oraimo">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Oraimo Riff 2 semi-intra-auriculaire véritables écouteurs sans fil</h5>
-                        <p class="card-text"><u>Version BT :</u> V5.3 <br/>
+                        <p class="card-text">
+                            <u>Version BT :</u> V5.3 <br/>
                             <u>Portée :</u> 10 m <br/>
                             <u>Autonomie de la batterie </u>: jusqu'à 6 heures d'autonomie sur une seule charge ; le boîtier offre 24 heures de lecture supplémentaires <br/>
-                            <u>Entrée de charge :</u> Type-C</p>
+                            <u>Entrée de charge :</u> Type-C
+                        </p>
                         <p class="fw-bold">Prix : FCFA 13.000</p>
                         <button class="btn btn-primary"><i class="bi bi-cart-plus"></i> Acheter maintenant</button>
                     </div>
                 </div>
             </div>
-
+            <!-- Produit 2 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/Powerbox.png" class="card-img-top img-fluid" alt="Produit PowerBank Oraimo">
@@ -64,7 +83,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Produit 3 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/Casque Bluetooth.png" class="card-img-top img-fluid" alt="Produit Casque Bluetooth">
@@ -82,7 +101,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Produit 4 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/Montre.png" class="card-img-top img-fluid" alt="Produit Montre Oraimo">
@@ -103,7 +122,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Produit 5 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/Ordinateur 1.jpg" class="card-img-top img-fluid" alt="Produit Ordi 1">
@@ -126,7 +145,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Produit 6 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/Ordi 3.jpg" class="card-img-top img-fluid" alt="Produit Ordi 2">
@@ -149,7 +168,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Produit 7 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/Ordi 4.jpg" class="card-img-top img-fluid" alt="Produit Ordi 3">
@@ -171,7 +190,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Produit 8 -->
             <div class="col-sm-3 col-md-4 col-lg-3 mb-4">
                 <div class="card zoom-effect">
                     <img src="image/Ordi 5.jpg" class="card-img-top img-fluid" alt="produit Ordi 4">
@@ -197,36 +216,36 @@
         </div>
     </section>
 
+    <!-- Section de contact -->
     <section id="contact" class="section_contact mb-3">
         <div class="container">
-
             <h2 class="text-center mb-5">Contactez Pour passer votre Commande</h2>
-
-    <!-- Section Contact -->
-     <div class="div_form">
+    
             <!-- Formulaire de Contact -->
-        <form action="#" method="post">
-            <label for="name"><b>Nom:</b></label><br/>
-            <input type="text" id="name" name="name" placeholder="Votre Nom" required><br/><br/>
-
-            <label for="email"><b>Email:</b></label><br/>
-            <input type="email" id="email" name="email" placeholder="Entrez votre Email" required><br/><br/>
-
-            <label for="message"><b>Message:</b></label><br/>
-            <textarea id="message" name="message" rows="4" placeholder="Votre Message"></textarea>
-
-            <button type="submit">Envoyer</button>
-        </form>
-    </div>
-            <div></div>
-            <div></div>
+            <div class="div_form">
+    
+                <form action="#" method="post">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre Nom" required>
+    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre Email" required>
+    
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Votre Message"></textarea>
+    
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
         </div>
     </section>
 
+    <!-- Pied de page -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Boutique Electronique</p>
     </footer>
 
+    <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
